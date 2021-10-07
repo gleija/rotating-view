@@ -7,9 +7,7 @@ const RotatingView: React.FunctionComponent = () => {
   let container: HTMLElement;
   React.useEffect(() => {
     open = document.getElementById('open') as HTMLButtonElement;
-    console.log(open);
     close = document.getElementById('close') as HTMLButtonElement;
-    console.log(close);
     container = document.querySelector(`.${classes.container}`) as HTMLElement;
     open.addEventListener('click', () =>
       container.classList.add(classes['show-nav'])
